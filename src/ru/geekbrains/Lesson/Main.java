@@ -11,12 +11,13 @@ public class Main {
         Cat cat2 = new Cat("Мурка");
         Dog dog1 = new Dog("Жучка");
         Dog dog2 = new Dog("Веста", 700, 10.5f,1);
+        Animal animal1 = new Animal("Хома", 5, 0, 0.1f);
 
 
-        Animal[] animals = {cat1, cat2, dog1, dog2};
+        Animal[] animals = {cat1, cat2, dog1, dog2, animal1};
 
         System.out.print("Сможет ли животное преодолеть препятствие: ");
-        System.out.println(cat1.name + ", " + cat2.name + ", " + dog1.name + ", " + dog2.name);
+        System.out.println(cat1.name + ", " + cat2.name + ", " + dog1.name + ", " + dog2.name + ", " + animal1.name);
         System.out.println("Выберете животное (введите имя):");
         String nameOfAnimal = scanner.nextLine();
         for (int i = 0; i < animals.length; i++) {
